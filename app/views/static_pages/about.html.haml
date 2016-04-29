@@ -1,0 +1,38 @@
+.intro-header
+  .container
+    .row
+      .col-lg-12
+        .intro-message
+          %h1 The Human Computation Project
+          %h3 An open source initiative to measure and quantify human computation.
+  .content-section-a
+    .container
+      .row
+        .col-lg-5.col-sm-6
+          %hr.section-heading-spacer
+            .clearfix
+            %h2.section-heading
+              A series of experiments designed to quantify human
+              computational ability.
+        .col-lg-5.col-lg-offset-2.col-sm-6
+          = image_tag("newspaper.jpg", class: "img-responsive")
+  %a{:name => "contact"}
+  .content-section-b
+    .container
+      .row
+        .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+          %hr.section-heading-spacer
+            .clearfix
+            %h3
+              Measuring human computation in objective and subjective tasks.
+  .banner
+    .container
+      .row
+        .col-lg-6
+          %h2 View the project on GitHub.
+        .col-lg-6
+          %ul.list-inline.banner-social-buttons
+            %li
+              %a.btn.btn-default.btn-lg{:href => "#"}
+                %i.fa.fa-linkedin.fa-fw
+                  %span.network-name GitHub

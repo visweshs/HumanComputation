@@ -1,0 +1,5 @@
+%body
+  = tag("div", data: {name: 'dataset', dataset: @dataset}, class: "dataset")
+  = tag("div", data: {name: 'labels', dataset: @labels}, class: "labels")
+  .graph{:style => "margin: 100px 100px 100px 100px"}
+
