@@ -40,16 +40,14 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4', '>= 3.4.1'
   gem 'factory_girl_rails', '~> 4.6'
   gem 'web-console', '~> 3.0'
-end
-###############################################################################
-# Use Capistrano for deployment
-group :development do
-  gem 'capistrano', '~> 3.4'
-  gem 'capistrano-rvm', '~> 0.1.2'
-  gem 'capistrano-rails', '~> 1.1', '>= 1.1.5'
-  gem 'capistrano-bundler', '~> 1.1', '>= 1.1.4'
-  gem 'capistrano3-puma', '~> 1.2', '>= 1.2.1'
-  gem 'capistrano-postgresql', '~> 4.2', '>= 4.2.1'
-  gem 'capistrano-npm', '~> 1.0', '>= 1.0.1'
   gem 'annotate', '~> 2.6', '>= 2.6.10'
 end
+###############################################################################
+
+###############################################################################
+# HEROKU #
+group :production do
+  gem 'rails_12factor'
+end
+###############################################################################
+
