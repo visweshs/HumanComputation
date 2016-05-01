@@ -1,0 +1,15 @@
+.row
+  .col-xs-12.col-sm-6.col-md-8
+    = tag("div", data: {name: 'dataset', dataset: @dataset}, class: "dataset")
+    .container
+      .graph{:style => "margin: 100px 100px 100px 100px"}
+.row
+  .col-xs-6.col-md-4
+    .closest_pair_form
+      %h4 Enter closest Pair (i.e AB):
+      = form_for(@trial) do |f|
+        = f.text_field :user_answer
+        = hidden_field_tag :graph_id, @trial.graph.id
+        = hidden_field_tag :time_milliseconds
+        = f.submit  t('.submit', :default => "Submit"), class: "btn btn-primary"
+

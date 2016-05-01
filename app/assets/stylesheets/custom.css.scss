@@ -12,7 +12,24 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+.closest_pair_form{
+  width: 60%;
+  margin-top: 50%;
+}
+
+#closest_pair_trial_user_answer{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.closest_pair_create{
+  margin-top: 25%;
+  margin-left: 50%;
+}
 /* nav bar */
+.navbar {
+  margin-bottom: 0px;
+}
+
 .navbar-inverse {
   background-color: rgba(239, 239, 239, 1.0);
   border-color: rgba(239, 239, 239, 1.0);

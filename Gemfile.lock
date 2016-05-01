@@ -227,8 +227,6 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.2)
-    turbolinks (2.5.3)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
@@ -268,7 +266,6 @@ DEPENDENCIES
   rspec-rails (~> 3.4, >= 3.4.1)
   sass-rails (~> 5.0, >= 5.0.4)
   spring (~> 1.5)
-  turbolinks (~> 2.5, >= 2.5.3)
   uglifier (~> 2.7, >= 2.7.2)
   web-console (~> 3.0)
 

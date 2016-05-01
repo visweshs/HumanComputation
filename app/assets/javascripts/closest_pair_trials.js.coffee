@@ -1,15 +1,24 @@
+//= require d3
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap
+
+
 $(document).ready ->
+  #Get Start Time
+  startTime = new Date().getTime()
+  console.log(startTime)
+
   #Get Data
   dataset = $('.dataset').data('dataset')
+  labels = $('.labels').data('dataset')
 
-  #Assign Labels
-  labelSet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
   label = {}
   i = 0
   while i < dataset.length
     x = dataset[i][0].toString()
     y = dataset[i][1].toString()
-    label[x + y] = labelSet[i]
+    label[x + y] = dataset[i][2].toString()
     i++
 
   #SVG Properties
@@ -62,3 +71,10 @@ $(document).ready ->
     .attr('font-family', 'sans-serif')
     .attr('font-size', '15px')
     .attr 'fill', 'white'
+
+  document.getElementById("closest_pair_trial_user_answer")
+    .addEventListener "click", ->
+      endTime = new Date().getTime()
+      document.getElementById('time_milliseconds').value = endTime - startTime
+
+

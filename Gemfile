@@ -12,7 +12,6 @@ gem 'net-ssh', '~> 3.0', '>= 3.0.1'
 ###############################################################################
 # Use rails with turbolinks enabled and strong parameters
 gem 'rails', '~> 4.2', '>= 4.2.5'
-gem 'turbolinks', '~> 2.5', '>= 2.5.3'
 gem 'coffee-rails', '~> 4.1'
 gem 'uglifier', '~> 2.7', '>= 2.7.2'
 gem 'react-rails', '~> 1.6'

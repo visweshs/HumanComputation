@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   root 'static_pages#about'
   get '/about', to: 'static_pages#about'
-  get '/closest_pair', to: 'closest_pair#index'
+  get '/closest_pair_results', to: 'results#closest_pair'
+
+  resources :closest_pair_trials
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
