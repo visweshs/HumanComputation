@@ -3,7 +3,6 @@
 //= require jquery_ujs
 //= require bootstrap
 
-
 $(document).ready ->
   #Get Start Time
   startTime = new Date().getTime()
@@ -11,6 +10,7 @@ $(document).ready ->
 
   #Get Data
   dataset = $('.dataset').data('dataset')
+  console.log(dataset)
   labels = $('.labels').data('dataset')
 
   label = {}

@@ -69,6 +69,7 @@ class ClosestPairTrialsController < ApplicationController
   def create
     graph = Graph.find_by(id: params[:graph_id])
     user_answer = params[:closest_pair_trial][:user_answer]
+    user_answer = user_answer.upcase
     time = params[:time_milliseconds]
     correct = user_answer == graph.answer ? true : false
     correct = correct || (user_answer.reverse! == graph.answer) ? true : false

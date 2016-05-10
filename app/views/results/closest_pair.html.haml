@@ -1,0 +1,20 @@
+.row
+  .col-xs-12.col-sm-6.col-md-8
+    .container
+      %h2 Closest Pair Results
+      %p The table lists the 10,000 latest results.
+      %table.table
+        %thead
+          %tr
+            %th Time(ms)
+            %th Answer Correct
+            %th Node Distance Variance
+            %th Node Distance Standard Deviation
+        %tbody
+          - @trials.each do |t|
+            %tr
+              %td= t.time_milliseconds
+              %td= t.correct
+              %td= t.graph.variance
+              %td= t.graph.std_dev
+
