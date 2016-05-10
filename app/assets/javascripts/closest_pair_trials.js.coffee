@@ -1,8 +1,3 @@
-//= require d3
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap
-
 $(document).ready ->
   #Get Start Time
   startTime = new Date().getTime()
