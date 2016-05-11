@@ -12,9 +12,10 @@
             %th Node Distance Standard Deviation
         %tbody
           - @trials.each do |t|
-            %tr
-              %td= t.time_milliseconds
-              %td= t.correct
-              %td= t.graph.variance
-              %td= t.graph.std_dev
+            - unless t.time_milliseconds.nil? || t.graph.variance.nil? || t.graph.std_dev.nil?
+              %tr
+                %td= t.time_milliseconds
+                %td= t.correct
+                %td= t.graph.variance
+                %td= t.graph.std_dev
 
